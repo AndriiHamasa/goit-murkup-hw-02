@@ -1,0 +1,96 @@
+.page{
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    font-style: normal;/*посмотреть, может это дефолтное значение*/
+}
+
+:root{
+    --primary-title-color: #212121;
+    --primary-text-color: #757575;
+    --accent-color: #2196F3;
+    --logo-black-color: #000000;
+    --secondary-bcg-color: #2F303A;
+}
+
+/*-------HEADER-------*/
+
+.pole-header{
+    background-color: #ffffff;
+}
+.logo-header{
+    color: var(--accent-color);
+
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.logo-span{
+    color: var(--logo-black-color);
+}
+
+/*-------navigation to pages-------*/
+
+.list{
+    list-style: none;
+}
+.nav-item{
+    color: var(--primary-title-color);
+}
+
+/*----hover and focus for all header----*/
+.nav-item:hover, .nav-item:focus, .contact-item:hover, .contact-item:focus{
+    color: var(--accent-color);
+}
+.nav-item, .contact-item{
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+/*-----list od contacts-----*/
+
+.contact-item{
+    color: var(--primary-text-color);
+}
+
+/*--------MAIN--------*/
+
+.hero-page{
+    background-color: var(--secondary-bcg-color);
+    color: #ffffff;
+}
+.hero-title{
+    
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.primary-btn{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+
+   letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+}
+.primary-btn:hover, .primary-btn:focus{
+    background-color: #2196F380;
+}
