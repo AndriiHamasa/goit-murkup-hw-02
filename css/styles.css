@@ -2,7 +2,7 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #FFFFFF;
     color: #757575;
-    font-style: normal;/*посмотреть, может это дефолтное значение*/
+    
 }
 
 :root{
@@ -14,6 +14,18 @@ body{
     --primary-bcg-color: #FFFFFF;
     --secondary-bcg-color: #2F303A;
 }
+.visually-hidden {
+    position: absolute;
+     white-space: nowrap;
+     width: 1px;
+     height: 1px;
+     overflow: hidden;
+     border: 0;
+     padding: 0;
+     clip: rect(0 0 0 0);
+     clip-path: inset(50%);
+     margin: -1px;
+   }
 
 /*-------HEADER-------*/
 
@@ -37,9 +49,6 @@ body{
 
 /*-------navigation to pages-------*/
 
-.list{
-    list-style: none;
-}
 .nav-item{
     color: var(--primary-title-color);
 }
@@ -88,12 +97,10 @@ body{
     color: var(--primary-bcg-color);
 }
 .primary-btn{
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-
-
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 0.06em;
     cursor: pointer;
 
@@ -101,7 +108,7 @@ body{
     background-color: var(--accent-color);
 }
 .primary-btn:hover, .primary-btn:focus{
-    background-color: #2196F380;
+    background-color: #188CE8;
 }
 
 /*----strong parts----*/
@@ -114,9 +121,6 @@ body{
     text-transform: uppercase;
 
     color: var(--primary-title-color);
-}
-.strong-list{
-    list-style: none;
 }
 .strong-text{
     font-size: 14px;
@@ -139,7 +143,7 @@ body{
 
     color: var(--primary-title-color);
 }
-.work-list, .team-list, .adres-list, .btn-list, .project-list{
+.work-list, .team-list, .adres-list, .btn-list, .project-list, .list, .strong-list{
     list-style: none;
 }
 
@@ -203,7 +207,7 @@ body{
 }
 
 .contact-footer{
-    font-family: 'Roboto';
+    
     font-style: normal;
     text-decoration: none;
     font-weight: 400;
@@ -215,7 +219,7 @@ body{
     color: rgba(255, 255, 255, 0.6);
 }
 .contact-footer:hover, .contact-footer:focus{
-    color: var(--primary-bcg-color);
+    color: var(--accent-color);
 }
 
 /*--------MAIN OF PAGE PORTFOLIO--------*/
@@ -245,8 +249,6 @@ body{
     text-decoration: none;
 }
 .project-title{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -256,8 +258,6 @@ body{
     color: var(--primary-title-color);
 }
 .project-text{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
